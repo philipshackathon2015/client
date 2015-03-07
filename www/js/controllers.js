@@ -1,5 +1,15 @@
 angular.module('HealthSweet.controllers', [])
-    .controller('LoginCtrl', function($scope, $state, $ionicLoading) {
+    .controller('SplashCtrl', function($state, $ionicBackdrop, $timeout) {
+        console.log('splash');
+
+        $ionicBackdrop.retain();
+            $timeout(function() {
+              $ionicBackdrop.release();
+
+              $state.go('login')
+            }, 2000);
+    })
+    .controller('LoginCtrl', function($scope, $state, $ionicLoading, $timeout) {
         console.log('login');
 
         $scope.login = function() {
@@ -9,7 +19,7 @@ angular.module('HealthSweet.controllers', [])
                 template: 'Logging in...'
             });
 
-            setTimeout(function() {
+            $timeout(function() {
                 $ionicLoading.hide();
 
                 $state.go('app.home')

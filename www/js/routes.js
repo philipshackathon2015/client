@@ -3,6 +3,11 @@ angular.module('HealthSweet.routes', [])
         // Ionic uses AngularUI Router which uses the concept of states
         // Learn more here: https://github.com/angular-ui/ui-router
         $stateProvider
+            .state('splash', {
+                url: '/splash',
+                templateUrl: 'templates/splash.html',
+                controller: 'SplashCtrl'
+            })
             .state('login', {
                 url: '/login',
                 templateUrl: 'templates/login.html',
@@ -23,5 +28,5 @@ angular.module('HealthSweet.routes', [])
                 }
             });
 
-        $urlRouterProvider.otherwise('/login');
+        $urlRouterProvider.otherwise('/splash');
     });
