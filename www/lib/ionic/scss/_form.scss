@@ -1,3 +1,5 @@
+/* NOTE: SOME STYLES HAVE BEEN COMMENTED OUT FOR OVERRIDE PURPOSES */
+
 /**
  * Forms
  * --------------------------------------------------
@@ -143,7 +145,7 @@ textarea {
 .item-stacked-label input,
 .item-stacked-label textarea {
   @include border-radius(2px);
-  padding: 4px 8px 3px 0;
+  /*padding: 4px 8px 3px 0;*/
   border: none;
   background-color: $input-bg;
 }
@@ -193,8 +195,8 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
   display: block;
-  padding-top: 2px;
-  padding-left: 0;
+  /*padding-top: 2px;*/
+  /*padding-left: 0;*/
   height: $line-height-computed + $font-size-base;
   color: $input-color;
   vertical-align: middle;

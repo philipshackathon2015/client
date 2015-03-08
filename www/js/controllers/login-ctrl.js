@@ -12,7 +12,7 @@ angular.module('HealthSweet.controllers')
             $timeout(function() {
                 $ionicLoading.hide();
 
-                $state.go('app.home');
+                // $state.go('app.home');
             }, 600);
         };
     });

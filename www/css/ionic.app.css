@@ -5755,7 +5755,7 @@ input, button, select, textarea {
 .item-stacked-label input, .item-stacked-label textarea {
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  padding: 4px 8px 3px 0;
+  /*padding: 4px 8px 3px 0;*/
   border: none;
   background-color: #fff; }
 
@@ -5782,8 +5782,8 @@ input, button, select, textarea {
 
 textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
   display: block;
-  padding-top: 2px;
-  padding-left: 0;
+  /*padding-top: 2px;*/
+  /*padding-left: 0;*/
   height: 34px;
   color: #111;
   vertical-align: middle;
