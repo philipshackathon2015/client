@@ -5,13 +5,13 @@
 
     <ion-content>
         <ion-list>
-            <div class="card">
+            <div ng-repeat="status in statuses" class="card">
                 <div class="item item-divider">
-                    March 5, 2015
+                    {{status.timestamp}}
                 </div>
 
                 <div class="item item-text-wrap">
-                    Some sort of sample mood feedback entry
+                    {{status.text}}
                 </div>
             </div>
         </ion-list>
