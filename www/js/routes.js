@@ -61,6 +61,21 @@ angular.module('HealthSweet.routes', [])
                 url: '/survey/:timestamp',
                 templateUrl: 'templates/survey.html',
                 controller: 'SurveyCtrl'
+            })
+            // nested states 
+            // each of these sections will have their own view
+            // url will be nested (/survey/2)
+            .state('survey.1', {
+                url: '/1',
+                templateUrl: 'templates/survey-1.html',
+            })
+            .state('survey.2', {
+                url: '/2',
+                templateUrl: 'templates/survey-2.html',
+            })
+            .state('survey.3', {
+                url: '/3',
+                templateUrl: 'templates/survey-3.html',
             });
 
         $urlRouterProvider.otherwise('/splash');
