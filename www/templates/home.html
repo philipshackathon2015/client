@@ -11,6 +11,15 @@
     </ion-nav-bar>
 
     <ion-content>
+        <div class="card">
+            <div class="item item-text-wrap item-icon-left">
+                <i class="icon ion-alert-circled"></i>
+                <span>It looks like you've been feeling poor lately.
+                    <a ui-sref="app.settings">Let us know more about that.</a>
+                </span>
+            </div>
+        </div>
+
         <ion-list>
             <div ng-repeat="status in statuses" class="card">
                 <div class="item item-divider">

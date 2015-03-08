@@ -16,6 +16,30 @@
 
     <ion-content>
         <ion-list can-swipe="true">
+            <div class="item item-divider">
+                Personal
+            </div>
+
+            <ion-item ng-repeat="contact in contacts" class="item-thumbnail-left item-icon-right" on-tap="call(contact)">
+                <img ng-src="{{contact.avatar}}">
+                <h2>{{contact.name}}</h2>
+                <p>{{contact.phoneNumber}}</p>
+
+                <i class="icon ion-ios-telephone-outline"></i>
+
+                <ion-option-button class="button-positive" on-tap="edit(contact)">
+                    <span>Edit</span>
+                </ion-option-button>
+
+                <ion-option-button class="button-assertive" on-tap="contacts.splice($index, 1)">
+                    <span>Delete</span>
+                </ion-option-button>
+            </ion-item>
+
+            <div class="item item-divider">
+                Medical
+            </div>
+
             <ion-item ng-repeat="contact in contacts" class="item-thumbnail-left item-icon-right" on-tap="call(contact)">
                 <img ng-src="{{contact.avatar}}">
                 <h2>{{contact.name}}</h2>
