@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'HealthSweet.services' is found in services.js
 // 'HealthSweet.controllers' is found in controllers.js
-angular.module('HealthSweet', [
+var HEALTHSWEET = angular.module('HealthSweet', [
     'ionic',
     'HealthSweet.routes',
     'HealthSweet.controllers',
