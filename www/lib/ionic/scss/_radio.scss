@@ -1,3 +1,4 @@
+/* NOTE: SOME STYLES HAVE BEEN COMMENTED OUT FOR OVERRIDE PURPOSES */
 
 /**
  * Radio Button Inputs
@@ -36,7 +37,7 @@
 
   &:checked ~ .item-content {
     /* style the item content when its checked */
-    background: #f7f7f7;
+    /*background: #f7f7f7;*/
   }
 
   &:checked ~ .radio-icon {

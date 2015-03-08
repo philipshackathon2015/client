@@ -4615,6 +4615,7 @@ ion-tabs.tabs-color-active-dark .tab-item {
     .loading-container .loading h1, .loading-container .loading h2, .loading-container .loading h3, .loading-container .loading h4, .loading-container .loading h5, .loading-container .loading h6 {
       color: #fff; }
 
+/* NOTE: SOME STYLES HAVE BEEN COMMENTED OUT FOR OVERRIDE PURPOSES */
 /**
  * Items
  * --------------------------------------------------
@@ -4767,7 +4768,7 @@ a.item {
   z-index: 2;
   padding: 16px 49px 16px 16px;
   border: none;
-  background-color: white; }
+  /*background-color: white;*/ }
 
 a.item-content {
   display: block;
@@ -6181,6 +6182,7 @@ input[type="radio"][disabled], input[type="checkbox"][disabled], input[type="rad
 .toggle-small .toggle-dark input:checked + .track .handle {
   background-color: #444; }
 
+/* NOTE: SOME STYLES HAVE BEEN COMMENTED OUT FOR OVERRIDE PURPOSES */
 /**
  * Radio Button Inputs
  * --------------------------------------------------
@@ -6209,9 +6211,6 @@ input[type="radio"][disabled], input[type="checkbox"][disabled], input[type="rad
   /* hide any radio button inputs elements (the ugly circles) */
   position: absolute;
   left: -9999px; }
-  .item-radio input:checked ~ .item-content {
-    /* style the item content when its checked */
-    background: #f7f7f7; }
   .item-radio input:checked ~ .radio-icon {
     /* show the checkmark icon when its checked */
     visibility: visible; }
@@ -8634,6 +8633,9 @@ a.button {
 .bgc-qr {
   background-color: #ff8773; }
 
+.bgc-qn {
+  background-color: #85b200; }
+
 .bgc-prlt {
   background-color: #bfefff; }
 
@@ -8720,6 +8722,9 @@ a.button {
 
 .c-ac {
   color: #fcc300; }
+
+.c-ltg {
+  color: #63666f; }
 
 /* TODO: add more mixed color options */
 /* OPACITY */
