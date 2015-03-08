@@ -1,12 +1,11 @@
-<ion-view title="NAME OF APP - Home">
+<ion-view title="NAME OF APP - Survey">
     <ion-nav-bar class="bar-stable">
         <!-- TODO: better way to show/hide this at logical times? -->
         <!-- <ion-nav-back-button>
         </ion-nav-back-button> -->
 
         <ion-nav-buttons side="left">
-            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
-            </button>
+            <button ui-sref="app.home" nav-direction="back" class="button button-clear button-positive">Back</button>
         </ion-nav-buttons>
     </ion-nav-bar>
 
@@ -15,7 +14,7 @@
             <div class="item item-text-wrap item-icon-left">
                 <i class="icon ion-alert-circled"></i>
                 <span>It looks like you've been feeling poor lately.
-                    <a nav-direction="forward" ng-href="/#/survey/4378343989">Let us know more about that.</a>
+                    <a ui-sref="app.settings">Let us know more about that.</a>
                 </span>
             </div>
         </div>

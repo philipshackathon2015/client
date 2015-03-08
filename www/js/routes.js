@@ -55,6 +55,12 @@ angular.module('HealthSweet.routes', [])
                         controller: 'SettingsCtrl'
                     }
                 }
+            })
+            // app routes that don't inherit side menu
+            .state('survey', {
+                url: '/survey/:timestamp',
+                templateUrl: 'templates/survey.html',
+                controller: 'SurveyCtrl'
             });
 
         $urlRouterProvider.otherwise('/splash');
