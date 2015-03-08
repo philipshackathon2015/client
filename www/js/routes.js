@@ -33,8 +33,8 @@ angular.module('HealthSweet.routes', [])
                 url: '/care-team',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/home.html',
-                        controller: 'HomeCtrl'
+                        templateUrl: 'templates/care-team.html',
+                        controller: 'CareTeamCtrl'
                     }
                 }
             })
@@ -42,8 +42,8 @@ angular.module('HealthSweet.routes', [])
                 url: '/care-plan',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/home.html',
-                        controller: 'HomeCtrl'
+                        templateUrl: 'templates/care-plan.html',
+                        controller: 'CarePlanCtrl'
                     }
                 }
             })
@@ -51,8 +51,8 @@ angular.module('HealthSweet.routes', [])
                 url: '/settings',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/home.html',
-                        controller: 'HomeCtrl'
+                        templateUrl: 'templates/settings.html',
+                        controller: 'SettingsCtrl'
                     }
                 }
             });

@@ -31,4 +31,45 @@ angular.module('HealthSweet.controllers', [])
     })
     .controller('HomeCtrl', function($scope) {
         console.log('home');
+    })
+    .controller('CareTeamCtrl', function($scope) {
+        console.log('care team');
+
+        $scope.contacts = [
+            {
+                name: 'Mom',
+                phoneNumber: '111-222-3333',
+                avatar: 'http://www.kuhlerfuneralhome.com/html/Linda_Small/Linda-Small-obit-photo.jpg'
+            },
+            {
+                name: 'Mom',
+                phoneNumber: '111-222-3333',
+                avatar: 'http://www.kuhlerfuneralhome.com/html/Linda_Small/Linda-Small-obit-photo.jpg'
+            },
+            {
+                name: 'Mom',
+                phoneNumber: '111-222-3333',
+                avatar: 'http://www.kuhlerfuneralhome.com/html/Linda_Small/Linda-Small-obit-photo.jpg'
+            },
+            {
+                name: 'Mom',
+                phoneNumber: '111-222-3333',
+                avatar: 'http://www.kuhlerfuneralhome.com/html/Linda_Small/Linda-Small-obit-photo.jpg'
+            },
+            {
+                name: 'Mom',
+                phoneNumber: '111-222-3333',
+                avatar: 'http://www.kuhlerfuneralhome.com/html/Linda_Small/Linda-Small-obit-photo.jpg'
+            }
+        ]
+
+        $scope.edit = function(contact) {
+            console.log(contact);
+        };
+    })
+    .controller('CarePlanCtrl', function($scope) {
+        console.log('care plan');
+    })
+    .controller('SettingsCtrl', function($scope) {
+        console.log('settings');
     });
