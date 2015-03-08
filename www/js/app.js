@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'HealthSweet.services' is found in services.js
 // 'HealthSweet.controllers' is found in controllers.js
-var HEALTHSWEET = angular.module('HealthSweet', [
+angular.module('HealthSweet', [
     'ionic',
     'HealthSweet.routes',
     'HealthSweet.controllers',
@@ -22,5 +22,12 @@ var HEALTHSWEET = angular.module('HealthSweet', [
             // org.apache.cordova.statusbar required
             StatusBar.styleDefault();
         }
+
+        var pusher = new Pusher('178160f97893ca18c3d2');
+        var channel = pusher.subscribe('HealthSweet');
+
+        channel.bind('newSurvey', function(data) {
+          alert('An event was triggered with message: ' + data);
+        });
     });
 });
