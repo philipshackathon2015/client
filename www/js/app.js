@@ -34,8 +34,8 @@ angular.module('HealthSweet', [
                 $rootScope.surveyTimestamp = (new Date).getTime();
 
                 var alertPopup = $ionicPopup.alert({
-                        title: 'New survey',
-                        template: 'Please fill it out'
+                        title: 'New survey!',
+                        template: 'Tell us a little about your recent habits.'
                     });
 
                 alertPopup.then(function(res) {

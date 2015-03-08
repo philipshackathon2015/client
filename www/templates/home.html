@@ -1,4 +1,4 @@
-<ion-view title='<img src="img/happ-logo-12.png" class="w-1-4" style="margin-top: 6px">'>
+<ion-view title='<img src="img/happ-logo-12.png" class="w-1-4">'>
     <ion-nav-bar class="bar-stable">
         <!-- TODO: better way to show/hide this at logical times? -->
         <!-- <ion-nav-back-button>
@@ -12,17 +12,22 @@
 
     <ion-content>
         <div class="card" ng-show="newSurvey">
-            <div class="item item-text-wrap item-icon-left bgc-qr">
+            <div class="item item-divider bgc-qr c-w">
+                New Survey - Movement and Wellness
+            </div>
+            <div class="item item-text-wrap item-icon-left">
                 <i class="icon ion-alert-circled"></i>
-                <span>It looks like you've been feeling poor lately.
-                    <a nav-direction="forward" ng-href="/#/survey/{{surveyTimestamp}}/1">Let us know more about that.</a>
+                <span>It looks like you've been feeling unwell lately.
+                    <a class="c-b" nav-direction="forward" ng-href="/#/survey/{{surveyTimestamp}}/1">Tell us more about that.</a>
                 </span>
             </div>
         </div>
 
+        <h3 class="pl-xs c-ltg">Recent surveys completed</h3>
+
         <ion-list>
             <div ng-repeat="status in statuses" class="card">
-                <div class="item item-divider">
+                <div class="item item-divider bgc-pr c-w">
                     {{status.timestamp}}
                 </div>
 

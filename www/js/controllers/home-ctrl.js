@@ -5,23 +5,23 @@ angular.module('HealthSweet.controllers')
         $scope.statuses = [
             {
                 timestamp: 'March 5, 2015',
-                text: 'Some text about the mood status report that was completed'
+                text: 'Movement and Wellness'
             },
             {
-                timestamp: 'March 5, 2015',
-                text: 'Some text about the mood status report that was completed'
+                timestamp: 'March 4, 2015',
+                text: 'Pain Management and Medications'
             },
             {
-                timestamp: 'March 5, 2015',
-                text: 'Some text about the mood status report that was completed'
+                timestamp: 'March 2, 2015',
+                text: 'Movement and Wellness'
             },
             {
-                timestamp: 'March 5, 2015',
-                text: 'Some text about the mood status report that was completed'
+                timestamp: 'February 27, 2015',
+                text: 'Movement and Wellness'
             },
             {
-                timestamp: 'March 5, 2015',
-                text: 'Some text about the mood status report that was completed'
+                timestamp: 'February 24, 2015',
+                text: 'Pain Management and Medications'
             }
         ];
     });
