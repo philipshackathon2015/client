@@ -6,27 +6,27 @@ angular.module('HealthSweet.controllers')
             {
                 name: 'Mom',
                 phoneNumber: '111-222-3333',
-                avatar: 'http://www.kuhlerfuneralhome.com/html/Linda_Small/Linda-Small-obit-photo.jpg'
+                avatar: 'img/mom.jpg'
             },
             {
                 name: 'Mom',
                 phoneNumber: '111-222-3333',
-                avatar: 'http://www.kuhlerfuneralhome.com/html/Linda_Small/Linda-Small-obit-photo.jpg'
+                avatar: 'img/mom.jpg'
             },
             {
                 name: 'Mom',
                 phoneNumber: '111-222-3333',
-                avatar: 'http://www.kuhlerfuneralhome.com/html/Linda_Small/Linda-Small-obit-photo.jpg'
+                avatar: 'img/mom.jpg'
             },
             {
                 name: 'Mom',
                 phoneNumber: '111-222-3333',
-                avatar: 'http://www.kuhlerfuneralhome.com/html/Linda_Small/Linda-Small-obit-photo.jpg'
+                avatar: 'img/mom.jpg'
             },
             {
                 name: 'Mom',
                 phoneNumber: '111-222-3333',
-                avatar: 'http://www.kuhlerfuneralhome.com/html/Linda_Small/Linda-Small-obit-photo.jpg'
+                avatar: 'img/mom.jpg'
             }
         ];
 
