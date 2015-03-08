@@ -1,9 +1,22 @@
 <ion-view title="NAME OF APP - Settings">
-    <ion-content>
-        <ion-list>
-            <ion-item>
-                SETTINGS
-            </ion-item>
-        </ion-list>
+    <ion-content class="padding">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+                <span class="input-label">Username</span>
+                <input type="text" value="fakeusername">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Password</span>
+            <input type="password" value="fakepassword">
+          </label>
+        </div>
+
+        <button class="button button-positive icon-left ion-social-facebook">
+            Connect to Facebook
+        </button>
+
+        <button class="button button-calm icon-left ion-social-twitter">
+            Connect to Twitter
+        </button>
     </ion-content>
 </ion-view>
