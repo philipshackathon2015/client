@@ -1,11 +1,8 @@
 angular.module('HealthSweet.controllers')
-    .controller('SplashCtrl', function($state, $ionicBackdrop, $timeout) {
+    .controller('SplashCtrl', function($state, $timeout) {
         console.log('splash');
 
-        $ionicBackdrop.retain();
-            $timeout(function() {
-              $ionicBackdrop.release();
-
-              $state.go('login')
-            }, 2000);
+        $timeout(function() {
+            $state.go('login')
+        }, 2000);
     });
