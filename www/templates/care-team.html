@@ -1,4 +1,19 @@
 <ion-view title="NAME OF APP - Care Team">
+    <ion-nav-bar class="bar-stable">
+        <!-- TODO: better way to show/hide this at logical times? -->
+        <!-- <ion-nav-back-button>
+        </ion-nav-back-button> -->
+
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+
+        <ion-nav-buttons side="right">
+            <button class="button button-clear button-positive">Add Contact</button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
     <ion-content>
         <ion-list can-swipe="true">
             <ion-item ng-repeat="contact in contacts" class="item-thumbnail-left item-icon-right" on-tap="call(contact)">
