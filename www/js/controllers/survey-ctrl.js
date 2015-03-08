@@ -1,3 +1,5 @@
+// TODO: need to clear form data after submission?
+
 angular.module('HealthSweet.controllers')
     .controller('SurveyCtrl', function($scope, $state, $stateParams, $timeout, $ionicLoading) {
         console.log('survey');

@@ -1,15 +1,35 @@
 <div class="item item-divider">
-    How are you feeling todayFUCK2?
+    What is making it difficult for you?
 </div>
 
-<div class="item range range-positive">
-    <i class="icon ion-sad-outline"></i>
-    <input type="range" name="volume" min="1" max="10" value="5">
-    <i class="icon ion-happy-outline"></i>
-</div>
+<label class="item item-radio">
+    <input type="radio" name="group" ng-model="formData.causeOfDifficulty" value="I am in pain.">
 
-<div class="item item-divider">
-    How are you feeling today?
-</div>
+    <div class="item-content">
+        I am in pain.
+    </div>
+
+    <i class="radio-icon ion-checkmark"></i>
+</label>
+
+<label class="item item-radio">
+    <input type="radio" name="group" ng-model="formData.causeOfDifficulty" value="Symptoms are worse.">
+
+    <div class="item-content">
+        Symptoms are worse.
+    </div>
+
+    <i class="radio-icon ion-checkmark"></i>
+</label>
+
+<label class="item item-radio">
+    <input type="radio" name="group" ng-model="formData.causeOfDifficulty" value="What's the point?">
+
+    <div class="item-content">
+        What's the point?
+    </div>
+
+    <i class="radio-icon ion-checkmark"></i>
+</label>
 
 <a ng-href="/#/survey/{{timestamp}}/3" class="button button-clear button-positive">Next</a>
