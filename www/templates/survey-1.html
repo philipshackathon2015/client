@@ -1,28 +1,11 @@
+<div class="item item-divider">
+    How are you feeling today?
+</div>
 
-        <div class="list">
-          <!-- <label class="item item-input item-stacked-label">
-                <span class="input-label">Username</span>
-                <input type="text" value="fakeusername">
-          </label>
+<div class="item range range-positive">
+    <i class="icon ion-sad-outline"></i>
+    <input type="range" name="volume" min="1" max="10" value="5" ng-model="formData.rating" ng-init="formData.rating = '5'">
+    <i class="icon ion-happy-outline"></i>
+</div>
 
-          <label class="item item-input item-stacked-label">
-            <span class="input-label">Password</span>
-            <input type="password" value="fakepassword">
-          </label>
-        </div> -->
-
-        <div class="item item-divider">
-            How are you feeling todayFUCK?
-        </div>
-
-        <div class="item range range-positive">
-            <i class="icon ion-sad-outline"></i>
-            <input type="range" name="volume" min="1" max="10" value="5">
-            <i class="icon ion-happy-outline"></i>
-        </div>
-
-        <div class="item item-divider">
-            How are you feeling today?
-        </div>
-    
-        <a ng-href="/#/survey/{{timestamp}}/2" nav-direction="forward" class="button button-clear button-positive">Next</a>
+<a ng-href="/#/survey/{{timestamp}}/2" class="button button-clear button-positive">Next</a>
