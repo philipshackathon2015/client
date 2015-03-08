@@ -1,3 +1,4 @@
+/* NOTE: STYLES HAVE BEEN COMMENTED OUT FOR OVERRIDE PURPOSES */
 
 // iOS View Transitions
 // -------------------------------
@@ -56,7 +57,7 @@ $ios-transition-container-bg-color:    #000 !default;
     z-index: $z-index-bar-above;
 
    .bar {
-      background: transparent;
+      /*background: transparent;*/
     }
   }
 

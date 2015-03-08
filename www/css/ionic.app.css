@@ -3010,6 +3010,7 @@ a.subdued {
   .backdrop.active {
     opacity: 1; }
 
+/* NOTE: STYLES HAVE BEEN COMMENTED OUT FOR OVERRIDE PURPOSES */
 /**
  * Bar (Headers and Footers)
  * --------------------------------------------------
@@ -3046,7 +3047,7 @@ a.subdued {
   @media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .bar {
       border: none;
-      background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
+      /*background-image: linear-gradient(0deg, $bar-default-border, $bar-default-border 50%, transparent 50%);*/
       background-position: bottom;
       background-size: 100% 1px;
       background-repeat: no-repeat; } }
@@ -3074,15 +3075,8 @@ a.subdued {
       color: #444; }
     .bar.bar-light.bar-footer {
       background-image: linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%); }
-  .bar.bar-stable {
-    border-color: #b2b2b2;
-    background-color: #f8f8f8;
-    background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
-    color: #444; }
-    .bar.bar-stable .title {
-      color: #444; }
-    .bar.bar-stable.bar-footer {
-      background-image: linear-gradient(180deg, #b2b2b2, #b2b2b2 50%, transparent 50%); }
+  .bar.bar-stable.bar-footer {
+    background-image: linear-gradient(180deg, #b2b2b2, #b2b2b2 50%, transparent 50%); }
   .bar.bar-positive {
     border-color: #0c63ee;
     background-color: #387ef5;
@@ -3422,10 +3416,10 @@ a.subdued {
 .bar-header {
   top: 0;
   border-top-width: 0;
-  border-bottom-width: 1px; }
+  /*border-bottom-width: 1px;*/ }
   .bar-header.has-tabs-top {
     border-bottom-width: 0px;
-    background-image: none; }
+    /*background-image: none;*/ }
 
 .tabs-top .bar-header {
   border-bottom-width: 0px;
@@ -5594,6 +5588,7 @@ a.item-content {
 .spinner-spiral.spinner-light .stop2 {
   stop-color: #fff; }
 
+/* NOTE: SOME STYLES HAVE BEEN COMMENTED OUT FOR OVERRIDE PURPOSES */
 /**
  * Forms
  * --------------------------------------------------
@@ -7506,6 +7501,7 @@ a.button {
     transform: scale(1);
     opacity: 1; } }
 
+/* NOTE: STYLES HAVE BEEN COMMENTED OUT FOR OVERRIDE PURPOSES */
 [nav-view-transition="ios"] [nav-view="entering"], [nav-view-transition="ios"] [nav-view="leaving"] {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
@@ -7529,8 +7525,6 @@ a.button {
   transition-property: opacity, transform; }
 [nav-bar-transition="ios"] [nav-bar="active"], [nav-bar-transition="ios"] [nav-bar="entering"] {
   z-index: 10; }
-  [nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
-    background: transparent; }
 [nav-bar-transition="ios"] [nav-bar="cached"] {
   display: block; }
   [nav-bar-transition="ios"] [nav-bar="cached"] .header-item {
@@ -8632,13 +8626,19 @@ a.button {
   background-color: #00BFFF; }
 
 .bgc-ac {
-  background-color: #00FFFF; }
+  background-color: #fcc300; }
+
+.bgc-tr {
+  background-color: #ff6351; }
+
+.bgc-qr {
+  background-color: #ff8773; }
 
 .bgc-prlt {
   background-color: #bfefff; }
 
 .bgc-aclt {
-  background-color: #bfffff; }
+  background-color: #fef0bf; }
 
 /* TODO: add more mixed color options */
 .bgi-n {
@@ -8719,7 +8719,7 @@ a.button {
   color: #00BFFF; }
 
 .c-ac {
-  color: #00FFFF; }
+  color: #fcc300; }
 
 /* TODO: add more mixed color options */
 /* OPACITY */
