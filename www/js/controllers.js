@@ -61,7 +61,11 @@ angular.module('HealthSweet.controllers', [])
                 phoneNumber: '111-222-3333',
                 avatar: 'http://www.kuhlerfuneralhome.com/html/Linda_Small/Linda-Small-obit-photo.jpg'
             }
-        ]
+        ];
+
+        $scope.call = function(contact) {
+            console.log(contact);
+        };
 
         $scope.edit = function(contact) {
             console.log(contact);
