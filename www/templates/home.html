@@ -11,11 +11,11 @@
     </ion-nav-bar>
 
     <ion-content>
-        <div class="card">
+        <div class="card" ng-show="newSurvey">
             <div class="item item-text-wrap item-icon-left">
                 <i class="icon ion-alert-circled"></i>
                 <span>It looks like you've been feeling poor lately.
-                    <a nav-direction="forward" ng-href="/#/survey/{{generateTimestamp()}}/1">Let us know more about that.</a>
+                    <a nav-direction="forward" ng-href="/#/survey/{{surveyTimestamp}}/1">Let us know more about that.</a>
                 </span>
             </div>
         </div>

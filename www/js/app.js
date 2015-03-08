@@ -10,7 +10,7 @@ angular.module('HealthSweet', [
     'HealthSweet.routes',
     'HealthSweet.controllers',
     'HealthSweet.services'
-]).run(function($ionicPlatform) {
+]).run(function($rootScope, $ionicPlatform, $ionicPopup) {
     $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -27,7 +27,23 @@ angular.module('HealthSweet', [
         var channel = pusher.subscribe('HealthSweet');
 
         channel.bind('newSurvey', function(data) {
-          alert('An event was triggered with message: ' + data);
+            console.log('new pusher message: ', data);
+
+            if (!$rootScope.newSurvey) {
+                $rootScope.newSurvey = true;
+                $rootScope.surveyTimestamp = (new Date).getTime();
+
+                var alertPopup = $ionicPopup.alert({
+                        title: 'New survey',
+                        template: 'Please fill it out'
+                    });
+
+                alertPopup.then(function(res) {
+                    console.log('New survey popup closed');
+                });
+            }
         });
+
+        $rootScope.newSurvey = false;
     });
 });
