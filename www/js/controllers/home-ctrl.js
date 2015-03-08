@@ -24,8 +24,4 @@ angular.module('HealthSweet.controllers')
                 text: 'Some text about the mood status report that was completed'
             }
         ];
-
-        $scope.generateTimestamp = function() {
-            return (new Date).getTime();
-        };
     });
